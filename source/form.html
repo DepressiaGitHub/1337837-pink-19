@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-		<title>Мобильное приложение «Pink»</title>
+    <title>Мобильное приложение «Pink»</title>
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.ico">
@@ -14,12 +14,12 @@
     <script src="js/picturefill-min.js" async></script> <!--Скрипт для работы тега picture в ie11-->
     <script src="js/svg4everybody-min.js"></script> <!--Скрипт для вставки SVG в ie11-->
     <script>svg4everybody(); // run it now or whenever you are ready</script>
-	</head>
-	<body>
+  </head>
+  <body>
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
-		<header class="page-header">
+    <header class="page-header">
       <div class="page-header__container">
         <div class="page-header__wrapper">
           <a class="page-header__logo" href="index.html" aria-label="Логотоип приложения «Pink»">
@@ -55,101 +55,101 @@
         </nav>
       </div>
     </header>
-		<main class="page-form">
+    <main class="page-form">
       <div class="page-form__wrapper">
         <h1 class="page-form__title container">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-			<p class="page-form__tagline">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-			<form class="form" action="https://echo.htmlacademy.ru" method="post">
-				<h2 class="visually-hidden">Форма для загрузки вашей фотографии.</h2>
-				<div class="form__user user-name container">
-					<div class="user-name__item">
-						<label for="user-surname">Фамилия:</label>
+      <p class="page-form__tagline">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="visually-hidden">Форма для загрузки вашей фотографии.</h2>
+        <div class="form__user user-name container">
+          <div class="user-name__item">
+            <label for="user-surname">Фамилия:</label>
             <input class="user-surname-js" id="user-surname" type="text" name="name" placeholder="Укажите фамилию *" required/>
-					</div>
-					<div class="user-name__item">
-						<label for="user-name">Имя:</label>
+          </div>
+          <div class="user-name__item">
+            <label for="user-name">Имя:</label>
             <input class="user-name-js" id="user-name" type="text" name="name" placeholder="Введите ваше имя *" required/>
-					</div>
-					<div class="user-name__item">
-						<label for="patronymic">Отчество:</label>
+          </div>
+          <div class="user-name__item">
+            <label for="patronymic">Отчество:</label>
             <input id="patronymic" type="text" name="name" placeholder="Ну и отчество тоже"/>
-					</div>
-				</div>
+          </div>
+        </div>
         <div class="form__wrapper user-achievements">
-				  <fieldset class="user-achievements__form container">
-				  	<legend>Ваши безбашенные достижения в путешествии</legend>
-				  	<ul class="user-achievements__list">
-				  		<li class="user-achievements__item">
+          <fieldset class="user-achievements__form container">
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+            <ul class="user-achievements__list">
+              <li class="user-achievements__item">
                 <input id="self_and_shark" type="checkbox" name="self_and_shark" checked/>
-				  			<label for="self_and_shark">Сделал селфи с акулой</label>
-				  		</li>
-				  		<li class="user-achievements__item">
+                <label for="self_and_shark">Сделал селфи с акулой</label>
+              </li>
+              <li class="user-achievements__item">
                 <input id="fire_beach" type="checkbox" name="fire_beach" checked/>
-				  			<label for="fire_beach">Обгорел на пляже</label>
-				  		</li>
-				  		<li class="user-achievements__item">
+                <label for="fire_beach">Обгорел на пляже</label>
+              </li>
+              <li class="user-achievements__item">
                 <input id="Chack_Norris" type="checkbox" name="Chack_Norris"/>
-				  			<label for="Chack_Norris">Видел Чака Норриса и взял автограф</label>
-				  		</li>
-				  		<li class="user-achievements__item">
+                <label for="Chack_Norris">Видел Чака Норриса и взял автограф</label>
+              </li>
+              <li class="user-achievements__item">
                 <input id="souvenir" type="checkbox" name="souvenir"/>
-				  			<label for="souvenir">Накупил сувениров</label>
-				  		</li>
-				  		<li class="user-achievements__item">
+                <label for="souvenir">Накупил сувениров</label>
+              </li>
+              <li class="user-achievements__item">
                 <input id="hold_tower" type="checkbox" name="hold_tower" checked/>
-				  			<label for="hold_tower">Удержал башню</label>
-				  		</li>
-				  		<li class="user-achievements__item">
+                <label for="hold_tower">Удержал башню</label>
+              </li>
+              <li class="user-achievements__item">
                 <input id="broke_hotel" type="checkbox" name="broke_hotel"/>
-				  			<label for="broke_hotel">Разгромил отель и угнал самолёт</label>
-				  		</li>
-				  	</ul>
-				  </fieldset>
+                <label for="broke_hotel">Разгромил отель и угнал самолёт</label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
         <fieldset class="form__user user-contacts container">
           <legend>Контактная информация</legend>
           <div class="user-contacts__wrapper">
-				    <div class="user-contacts__item user-contacts__item--icon-phone">
-				    	<label for="phone">Номер телефона</label>
+            <div class="user-contacts__item user-contacts__item--icon-phone">
+              <label for="phone">Номер телефона</label>
               <input id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста"/>
-				    </div>
-				    <div class="user-contacts__item user-contacts__item--icon-mail">
-				    	<label for="email">Адрес почты</label>
+            </div>
+            <div class="user-contacts__item user-contacts__item--icon-mail">
+              <label for="email">Адрес почты</label>
               <input class="user-email-js" id="email" type="email" name="email" placeholder="Введите почту *" required/>
-				    </div>
+            </div>
           </div>
         </fieldset>
         <div class="form__wrapper user-app">
-				  <fieldset class="user-app__form container">
-				  	<legend>С каким приложением путешествовали?</legend>
-				  	<ul class="user-app__list">
-				  		<li class="user-app__item">
+          <fieldset class="user-app__form container">
+            <legend>С каким приложением путешествовали?</legend>
+            <ul class="user-app__list">
+              <li class="user-app__item">
                 <input id="ios" type="radio" name="app-type" value="ios" />
-				  		  <label for="ios">Pink для iOS</label>
-				  		</li>
-				  		<li class="user-app__item">
+                <label for="ios">Pink для iOS</label>
+              </li>
+              <li class="user-app__item">
                 <input id="android" type="radio" name="app-type" value="android" checked/>
-				  			<label for="android">Pink на Android</label>
-				  		</li>
-				  		<li class="user-app__item">
+                <label for="android">Pink на Android</label>
+              </li>
+              <li class="user-app__item">
                 <input id="wnd_phone" type="radio" name="app-type" value="wnd_phone" />
-				  			<label for="wnd_phone">Windows Phone</label>
-				  		</li>
-				  	</ul>
-				  </fieldset>
+                <label for="wnd_phone">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
-				<fieldset class="form__text user-emotions container">
-					<legend>Опишите свои эмоции</legend>
+        <fieldset class="form__text user-emotions container">
+          <legend>Опишите свои эмоции</legend>
           <textarea name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-				</fieldset>
+        </fieldset>
         <div class="form__footer container">
-				  <button class="form__button" type="submit">Отправить форму</button>
-				  <p><span>*</span> — Обязательные <span class="form_footer-text">для заполнения</span> поля</p>
+          <button class="form__button" type="submit">Отправить форму</button>
+          <p><span>*</span> — Обязательные <span class="form_footer-text">для заполнения</span> поля</p>
         </div>
-			</form>
-		</main>
-		<footer class="page-footer  container">
+      </form>
+    </main>
+    <footer class="page-footer  container">
       <a class="page-footer__logo" href="index.html" aria-label="Логотоип приложения «Pink»">
         <svg class="page-footer__image page-footer__image--mobile" width="147" height="40" role="img" focusable="false">
           <use xlink:href="#logo-pink-blue-mobile"></use>
@@ -202,5 +202,5 @@
     </section>
     <script src="js/menu-toggle.js"></script> <!--Открытие-закрытие меню-->
     <script src="js/form.js"></script> <!--Отправка заявки-->
-	</body>
+  </body>
 </html>

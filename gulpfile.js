@@ -93,10 +93,10 @@ gulp.task("html", function () {
 
 /*Минимализирует js файлы*/
 gulp.task("minijs", function() {
- return gulp.src("source/js/*.js")
-  .pipe(concat("all.js"))
-  .pipe(uglify())
-  .pipe(gulp.dest("build/js"));
+  return gulp.src("source/js/*.js")
+    .pipe(concat("all.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
 });
 
 /*Копируем все файлы в build*/
