@@ -10,7 +10,7 @@
   color: $color-bluegrey;
 }
 
-.page-footer__logo[href] svg {
+.page-footer__logo[href] {
   &:hover {
     color: $color-darkred;
     transition: 0.3s;
