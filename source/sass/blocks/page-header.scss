@@ -26,7 +26,8 @@
 }
 
 .page-header__logo[href] {
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-darkred;
     transition: 0.3s;
   }
