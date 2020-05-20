@@ -10,6 +10,10 @@
   color: $color-bluegrey;
 }
 
+.page-footer__logo svg {
+  pointer-events: none;
+}
+
 .page-footer__logo[href] {
   &:hover,
   &:focus {
@@ -49,6 +53,10 @@
     opacity: 0.3;
     transition: 0.3s;
   }
+}
+
+.page-footer__html svg {
+  pointer-events: none;
 }
 
 .page-footer__html p {

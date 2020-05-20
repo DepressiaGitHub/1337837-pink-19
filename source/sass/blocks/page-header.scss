@@ -25,6 +25,10 @@
   height: 22px;
 }
 
+.page-header__logo svg {
+  pointer-events: none;
+}
+
 .page-header__logo[href] {
   &:hover,
   &:focus {
