@@ -60,9 +60,11 @@ gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel:3}),
-      imagemin.mozjpeg({progessive: true}),
+      imagemin.mozjpeg({quality: 75, progessive: true}),
       imagemin.svgo({
-        plugins: [{removeViewBox: false}]
+        plugins: [
+          {removeViewBox: false},
+          {convertPathData: true}]
       })
       ]))
     .pipe(gulp.dest("source/img"));
