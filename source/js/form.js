@@ -20,6 +20,7 @@ name.removeAttribute("required");
 form.addEventListener("submit", function (evt) {
   if (!surname.value || !name.value || !email.value) {
     evt.preventDefault();
+    console.log("Отправка формы");
     modalFailed.classList.add("modal--show");
     buttonFailed.focus();
 
