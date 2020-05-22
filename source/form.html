@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.ico">
     <link rel="apple-touch-icon-precomposed" sizes="64x64" href="img/favicons/favicon-64x64.ico">
-    <script>document.createElement( "picture" );</script>
-    <script src="js/picturefill-min.js" async></script> <!--Скрипт для работы тега picture в ie11-->
-    <script src="js/svg4everybody-min.js"></script> <!--Скрипт для вставки SVG в ie11-->
-    <script>svg4everybody(); // run it now or whenever you are ready</script>
   </head>
   <body>
     <div style="display: none">
@@ -59,7 +55,7 @@
         <div class="form__user user-name container">
           <div class="user-name__item">
             <label for="user-surname">Фамилия:</label>
-            <input class="user-surname-js" id="user-surname" type="text" name="name" placeholder="Укажите фамилию *" required/>
+            <input class="user-surname-js" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *" required/>
           </div>
           <div class="user-name__item">
             <label for="user-name">Имя:</label>
@@ -67,7 +63,7 @@
           </div>
           <div class="user-name__item">
             <label for="patronymic">Отчество:</label>
-            <input id="patronymic" type="text" name="name" placeholder="Ну и отчество тоже"/>
+            <input id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже"/>
           </div>
         </div>
         <div class="form__wrapper user-achievements">
@@ -191,7 +187,8 @@
         <button class="modal__button modal__button--failed" type="button">Ок</button>
       </div>
     </section>
-    <script src="js/menu-toggle.js"></script> <!--Открытие-закрытие меню-->
-    <script src="js/form.js"></script> <!--Отправка заявки-->
+    <script src="js/all.js"></script>
+    <script>document.createElement( "picture" );</script> <!--Скрипт для работы тега picture в ie11-->
+    <script>svg4everybody();</script> <!--Скрипт для вставки SVG в ie11-->
   </body>
 </html>

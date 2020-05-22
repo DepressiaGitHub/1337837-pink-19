@@ -25,8 +25,13 @@
   height: 22px;
 }
 
+.page-header__logo svg {
+  pointer-events: none;
+}
+
 .page-header__logo[href] {
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-darkred;
     transition: 0.3s;
   }

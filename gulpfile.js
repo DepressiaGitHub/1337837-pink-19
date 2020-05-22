@@ -94,10 +94,9 @@ gulp.task("html", function () {
 })
 
 /*Минимализирует js файлы*/
-gulp.task("minijs", function() {
+gulp.task("alljs", function() {
   return gulp.src("source/js/*.js")
     .pipe(concat("all.js"))
-    .pipe(uglify())
     .pipe(gulp.dest("build/js"));
 });
 
@@ -106,7 +105,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*.ico"
     ], {
       base: "source"
@@ -119,5 +117,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "alljs", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.ico">
     <link rel="apple-touch-icon-precomposed" sizes="64x64" href="img/favicons/favicon-64x64.ico">
-    <script>document.createElement( "picture" );</script>
-    <script src="js/picturefill-min.js" async></script> <!--Скрипт для работы тега picture в ie11-->
-    <script src="js/svg4everybody-min.js"></script> <!--Скрипт для вставки SVG в ie11-->
-    <script>svg4everybody(); // run it now or whenever you are ready</script>
   </head>
   <body>
     <div style="display: none">
@@ -277,7 +273,7 @@
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться!</h2>
         <div class="map__wrapper">
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5607817553096!2d30.322758940212946!3d59.93943004076303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588882462037!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5607817553096!2d30.322758940212946!3d59.93943004076303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588882462037!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="-1"></iframe>
           <div class="map__picture">
           <picture>
             <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
@@ -321,6 +317,8 @@
         </svg>
       </a>
     </footer>
-    <script src="js/menu-toggle.js"></script> <!--Открытие-закрытие меню-->
+    <script src="js/all.js"></script>
+    <script>document.createElement( "picture" );</script> <!--Скрипт для работы тега picture в ie11-->
+    <script>svg4everybody();</script> <!--Скрипт для вставки SVG в ie11-->
   </body>
 </html>
